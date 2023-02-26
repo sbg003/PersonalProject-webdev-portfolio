@@ -1,5 +1,8 @@
 body{
     height: 100%;
+    background-image: linear-gradient(rgb(20, 81, 85), rgb(77, 128, 132) 10%);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: rgb(77, 128, 132);
     margin: 0 30px 0 30px;
 }
@@ -37,7 +40,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 75px;
+    height: 40px;
     width: 100%;
     background-image: linear-gradient(to right, tan, beige, rgb(252, 249, 239));
 }
@@ -47,6 +50,7 @@ body{
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        height: 75px;
     }
 }
 
@@ -54,7 +58,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
+    height: 15px;
     width: 60px;
     text-decoration: none;
     color: rgb(67, 15, 15);
@@ -71,7 +75,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
+    height: 15px;
     width: 60px;
     text-decoration: none;
     color: rgb(67, 15, 15);
@@ -88,7 +92,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30px;
+    height: 15px;
     width: 60px;
     text-decoration: none;
     color: rgb(67, 15, 15);
@@ -99,6 +103,20 @@ body{
     border-width: 2px;
     border-image: linear-gradient(45deg, beige, rgb(252, 249, 239)) 1;
     margin: 5px 15px 5px 10px;
+}
+
+@media screen and (min-width: 1000px){
+    .home-link{
+        height: 30px;
+    }
+
+    .about-link{
+        height: 30px;
+    }
+
+    .projects-link{
+        height: 30px;
+    }
 }
 
 .h2-1{
