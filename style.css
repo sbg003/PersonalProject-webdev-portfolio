@@ -16,16 +16,44 @@ body{
     background-size: cover;
     background-color: var(--primary-color-1);
     margin: 0 30px 0 30px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.loading-animation {
+    overflow: hidden;
+}
+
+@keyframes drop-in {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    } to {
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
 
 .h1{
     height: 100px;
     width: 100%;
+    display: flex;
     font-size: 30px;
     color: var(--text-color-1);
     padding-bottom: 10px;
     border-bottom: 2px solid var(--text-color-1);
     margin-top: 20px;
+    animation: drop-in 1s ease 200ms backwards;
 }
 
 .navbar{
@@ -121,6 +149,7 @@ body{
     color: var(--text-color-1);
     padding: 5px;
     border-bottom: 2px solid var(--text-color-1);
+    animation: drop-in 1200ms ease 500ms backwards;
 }
 
 .about{
@@ -142,6 +171,7 @@ body{
     color: var(--text-color-1);
     padding: 5px;
     border-bottom: 2px solid var(--text-color-1);
+    animation: drop-in 1200ms ease 500ms backwards;
 }
 
 .home-photos{
@@ -213,6 +243,7 @@ body{
     padding: 5px;
     border-bottom: 2px solid var(--text-color-2);
     margin-left: 5px;
+    animation: drop-in 1200ms ease 500ms backwards;
 }
 
 .skills {
