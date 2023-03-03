@@ -18,17 +18,6 @@ body{
     margin: 0 30px 0 30px;
 }
 
-@media screen and (min-width: 500px){
-    body{
-    height: 100%;
-    background-image: linear-gradient(var(--primary-color-2), var(--primary-color-1) 25%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--primary-color-1);
-    margin: 0 30px 0 30px;
-    }
-}
-
 .h1{
     height: 100px;
     width: 100%;
@@ -39,14 +28,6 @@ body{
     margin-top: 20px;
 }
 
-@media screen and (min-width: 500px){
-    .h1{
-        font-size: 40px;
-        padding-bottom: 5px;
-        margin-top:100px;
-    }
-}
-
 .navbar{
     display: flex;
     align-items: center;
@@ -54,15 +35,6 @@ body{
     height: 40px;
     width: 100%;
     background-image: linear-gradient(to right, var(--accent-color-1), var(--accent-color-2), var(--accent-color-3));
-}
-
-@media screen and (min-width: 500px){
-    .navbar{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        height: 75px;
-    }
 }
 
 .home-link{
@@ -135,20 +107,6 @@ body{
     height: 25px;
     background-color: var(--text-color-1);
     border-bottom-color:var(--text-color-2);
-}
-
-@media screen and (min-width: 500px){
-    .home-link{
-        height: 30px;
-    }
-
-    .about-link{
-        height: 30px;
-    }
-
-    .projects-link{
-        height: 30px;
-    }
 }
 
 .h2-1{
@@ -237,7 +195,58 @@ body{
     color: var(--text-color-1);
 }
 
-@media screen and (min-width: 500px) {
+.footer{
+    height: 600px;
+    width: 100%;
+    display: grid;
+    border-top: 2px solid var(--text-color-1);
+}
+
+.h2-3{
+    display: flex;
+    align-items:flex-start;
+    height: 25px;
+    width: 100%;
+    color: var(--text-color-1);
+    padding: 5px;
+    border-bottom: 2px solid var(--text-color-1);
+}
+
+@media screen and (min-width: 490px) {
+    body{
+        height: 100%;
+        background-image: linear-gradient(var(--primary-color-2), var(--primary-color-1) 25%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--primary-color-1);
+        margin: 0 30px 0 30px;
+        }
+
+    .h1{
+        font-size: 40px;
+        padding-bottom: 5px;
+        margin-top:100px;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 75px;
+    }
+
+    .home-link{
+        height: 30px;
+    }
+
+    .about-link{
+        height: 30px;
+    }
+
+    .projects-link{
+        height: 30px;
+    }
+
     .home-container{
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -354,26 +363,7 @@ body{
         color: var(--text-color-1);
         width: 100%;
     }
-}
 
-.footer{
-    height: 600px;
-    width: 100%;
-    display: grid;
-    border-top: 2px solid var(--text-color-1);
-}
-
-.h2-3{
-    display: flex;
-    align-items:flex-start;
-    height: 25px;
-    width: 100%;
-    color: var(--text-color-1);
-    padding: 5px;
-    border-bottom: 2px solid var(--text-color-1);
-}
-
-@media screen and (min-width: 500px) {
     .footer{
         height: 300px;
     }
