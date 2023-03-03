@@ -65,10 +65,17 @@ body{
     font-weight: bold;
     background-color: rgb(252, 249, 239);
     padding: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-image: linear-gradient(45deg, beige, rgb(252, 249, 239)) 1;
-    margin: 5px 5px 5px 15px;
+    border-bottom: 2px solid beige;
+    border-left: 2px solid beige;
+    margin: 5px 5px 5px 10px;
+    transition: width 0.1s, height 0.1s, border-bottom-color 0.1s, background-color 0.1s;
+}
+
+.home-link:hover {
+    width: 75px;
+    height: 25px;
+    background-color: white;
+    border-bottom-color:rgb(67, 15, 15);
 }
 
 .about-link{
@@ -82,10 +89,17 @@ body{
     font-weight: bold;
     background-color: rgb(252, 249, 239);
     padding: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-image: linear-gradient(45deg, beige, rgb(252, 249, 239)) 1;
+    border-bottom: 2px solid beige;
+    border-left: 2px solid beige;
     margin: 5px 5px 5px 10px;
+    transition: width 0.1s, height 0.1s, border-bottom-color 0.1s, background-color 0.1s;
+}
+
+.about-link:hover {
+    width: 75px;
+    height: 25px;
+    background-color: white;
+    border-bottom-color:rgb(67, 15, 15);
 }
 
 .projects-link{
@@ -99,10 +113,17 @@ body{
     font-weight: bold;
     background-color: rgb(252, 249, 239);
     padding: 5px;
-    border-style: solid;
-    border-width: 2px;
-    border-image: linear-gradient(45deg, beige, rgb(252, 249, 239)) 1;
-    margin: 5px 15px 5px 10px;
+    border-bottom: 2px solid beige;
+    border-left: 2px solid beige;
+    margin: 5px 5px 5px 10px;
+    transition: width 0.1s, height 0.1s, border-bottom-color 0.1s, background-color 0.1s;
+}
+
+.projects-link:hover {
+    width: 75px;
+    height: 25px;
+    background-color: white;
+    border-bottom-color:rgb(67, 15, 15);
 }
 
 @media screen and (min-width: 1000px){
