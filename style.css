@@ -1,19 +1,30 @@
+:root {
+    --primary-color-1: rgb(77, 128, 132);
+    --primary-color-2: rgb(20, 81, 85);
+    --accent-color-1: tan;
+    --accent-color-2: beige;
+    --accent-color-3: rgb(252, 249, 239);
+
+    --text-color-1: white;
+    --text-color-2: rgb(67, 15, 15);
+}
+
 body{
     height: 100%;
-    background-image: linear-gradient(rgb(20, 81, 85), rgb(77, 128, 132) 10%);
+    background-image: linear-gradient(var(--primary-color-2), var(--primary-color-1) 10%);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgb(77, 128, 132);
+    background-color: var(--primary-color-1);
     margin: 0 30px 0 30px;
 }
 
 @media screen and (min-width: 500px){
     body{
     height: 100%;
-    background-image: linear-gradient(rgb(20, 81, 85), rgb(77, 128, 132) 25%);
+    background-image: linear-gradient(var(--primary-color-2), var(--primary-color-1) 25%);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: rgb(77, 128, 132);
+    background-color: var(--primary-color-1);
     margin: 0 30px 0 30px;
     }
 }
@@ -22,9 +33,9 @@ body{
     height: 100px;
     width: 100%;
     font-size: 30px;
-    color: white;
+    color: var(--text-color-1);
     padding-bottom: 10px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--text-color-1);
     margin-top: 20px;
 }
 
@@ -42,7 +53,7 @@ body{
     justify-content: space-around;
     height: 40px;
     width: 100%;
-    background-image: linear-gradient(to right, tan, beige, rgb(252, 249, 239));
+    background-image: linear-gradient(to right, var(--accent-color-1), var(--accent-color-2), var(--accent-color-3));
 }
 
 @media screen and (min-width: 500px){
@@ -61,12 +72,12 @@ body{
     height: 15px;
     width: 60px;
     text-decoration: none;
-    color: rgb(67, 15, 15);
+    color: var(--text-color-2);
     font-weight: bold;
-    background-color: rgb(252, 249, 239);
+    background-color: var(--accent-color-3);
     padding: 5px;
-    border-bottom: 2px solid beige;
-    border-left: 2px solid beige;
+    border-bottom: 2px solid var(--accent-color-2);
+    border-left: 2px solid var(--accent-color-2);
     margin: 5px 5px 5px 10px;
     transition: width 0.1s, height 0.1s, border-bottom-color 0.1s, background-color 0.1s;
 }
@@ -74,8 +85,8 @@ body{
 .home-link:hover {
     width: 75px;
     height: 25px;
-    background-color: white;
-    border-bottom-color:rgb(67, 15, 15);
+    background-color: var(--text-color-1);
+    border-bottom-color:var(--text-color-2);
 }
 
 .about-link{
@@ -85,12 +96,12 @@ body{
     height: 15px;
     width: 60px;
     text-decoration: none;
-    color: rgb(67, 15, 15);
+    color: var(--text-color-2);
     font-weight: bold;
-    background-color: rgb(252, 249, 239);
+    background-color: var(--accent-color-3);
     padding: 5px;
-    border-bottom: 2px solid beige;
-    border-left: 2px solid beige;
+    border-bottom: 2px solid var(--accent-color-2);
+    border-left: 2px solid var(--accent-color-2);
     margin: 5px 5px 5px 10px;
     transition: width 0.1s, height 0.1s, border-bottom-color 0.1s, background-color 0.1s;
 }
@@ -98,8 +109,8 @@ body{
 .about-link:hover {
     width: 75px;
     height: 25px;
-    background-color: white;
-    border-bottom-color:rgb(67, 15, 15);
+    background-color: var(--text-color-1);
+    border-bottom-color:var(--text-color-2);
 }
 
 .projects-link{
@@ -109,12 +120,12 @@ body{
     height: 15px;
     width: 60px;
     text-decoration: none;
-    color: rgb(67, 15, 15);
+    color: var(--text-color-2);
     font-weight: bold;
-    background-color: rgb(252, 249, 239);
+    background-color: var(--accent-color-3);
     padding: 5px;
-    border-bottom: 2px solid beige;
-    border-left: 2px solid beige;
+    border-bottom: 2px solid var(--accent-color-2);
+    border-left: 2px solid var(--accent-color-2);
     margin: 5px 5px 5px 10px;
     transition: width 0.1s, height 0.1s, border-bottom-color 0.1s, background-color 0.1s;
 }
@@ -122,8 +133,8 @@ body{
 .projects-link:hover {
     width: 75px;
     height: 25px;
-    background-color: white;
-    border-bottom-color:rgb(67, 15, 15);
+    background-color: var(--text-color-1);
+    border-bottom-color:var(--text-color-2);
 }
 
 @media screen and (min-width: 500px){
@@ -145,14 +156,14 @@ body{
     align-items:flex-start;
     height: 25px;
     width: 100%;
-    color: white;
+    color: var(--text-color-1);
     padding: 5px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--text-color-1);
 }
 
 .about{
     width: 100%;
-    color: white;
+    color: var(--text-color-1);
 }
 
 .img-logo{
@@ -166,9 +177,9 @@ body{
     align-items:flex-start;
     height: 25px;
     width: 100%;
-    color: white;
+    color: var(--text-color-1);
     padding: 5px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--text-color-1);
 }
 
 .home-photos{
@@ -181,11 +192,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(77, 128, 132);
+    background-color: var(--primary-color-1);
     padding: 10px;
     border-style: solid;
     border-width: 2px;
-    border-image: linear-gradient(45deg, rgb(77, 128, 132), rgb(20, 81, 85)) 1;
+    border-image: linear-gradient(45deg, var(--primary-color-1), var(--primary-color-2)) 1;
 }
 
 .img-home-2{
@@ -194,11 +205,11 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(77, 128, 132);
+    background-color: var(--primary-color-1);
     padding: 10px;
     border-style: solid;
     border-width: 2px;
-    border-image: linear-gradient(45deg, rgb(77, 128, 132), rgb(20, 81, 85)) 1;
+    border-image: linear-gradient(45deg, var(--primary-color-1), var(--primary-color-2)) 1;
 }
 
 .img-home-3{
@@ -207,23 +218,23 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(77, 128, 132);
+    background-color: var(--primary-color-1);
     padding: 10px;
     border-style: solid;
     border-width: 2px;
-    border-image: linear-gradient(45deg, rgb(77, 128, 132), rgb(20, 81, 85)) 1;
+    border-image: linear-gradient(45deg, var(--primary-color-1), var(--primary-color-2)) 1;
 }
 
 .img-home-p-1{
-    color: white;
+    color: var(--text-color-1);
 }
 
 .img-home-p-2{
-    color: white;
+    color: var(--text-color-1);
 }
 
 .img-home-p-3{
-    color: white;
+    color: var(--text-color-1);
 }
 
 @media screen and (min-width: 500px) {
@@ -232,17 +243,13 @@ body{
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: 10% 30% 60%;
     }
-}
 
-@media screen and (min-width: 500px){
     .h2-1{
-        grid-column-start: 1;
-        grid-row-start: 1;
-        width: 30%;
+            grid-column-start: 1;
+            grid-row-start: 1;
+            width: 30%;
     }
-}
 
-@media screen and (min-width: 500px){
     .about{
         width: 100%;
         grid-column-start: 1;
@@ -251,9 +258,7 @@ body{
         align-items: flex-start;
         font-size: 20px;
     }
-}
 
-@media screen and (min-width: 500px){
     .img-logo{
         grid-column-start: 1;
         grid-row-start: 3;
@@ -264,18 +269,14 @@ body{
         align-items: flex-start;
         margin-top: 50px;
     }
-}
 
-@media screen and (min-width: 500px){
     .h2-2{
         grid-column-start: 2;
         grid-row-start: 1;
         width: 50%;
         display: flex;
     }
-}
 
-@media screen and (min-width: 500px){
     .home-photos{
         width: 100%;
         display: grid;
@@ -284,92 +285,73 @@ body{
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
     }
-}
 
-@media screen and (min-width: 500px){
     .home-photo-1{
         display: flex;
     }
-}
 
-@media screen and (min-width: 500px){
     .home-photo-2{
         display: flex;
     }
-}
 
-@media screen and (min-width: 500px){
     .home-photo-3{
         display: flex;
     }
-}
 
-@media screen and (min-width: 500px){
     .img-home-1{
         grid-row-start: 1;
         height: 300px;
         width: 500px;
-        background-color: rgb(77, 128, 132);
+        background-color: var(--primary-color-1);
         padding: 10px;
         border-style: solid;
         border-width: 2px;
-        border-image: linear-gradient(45deg, rgb(77, 128, 132), rgb(20, 81, 85)) 1;
+        border-image: linear-gradient(45deg, var(--primary-color-1), var(--primary-color-2)) 1;
         margin: 25px;
     }
-}
 
-@media screen and (min-width: 500px){
     .img-home-2{
         grid-row-start: 2;
         height: 300px;
         width: 500px;
-        background-color: rgb(77, 128, 132);
+        background-color: var(--primary-color-1);
         padding: 10px;
         border-style: solid;
         border-width: 2px;
-        border-image: linear-gradient(45deg, rgb(77, 128, 132), rgb(20, 81, 85)) 1;
+        border-image: linear-gradient(45deg, var(--primary-color-1), var(--primary-color-2)) 1;
         margin: 25px;
     }
-}
 
-@media screen and (min-width: 500px){
     .img-home-3{
         grid-row-start: 3;
         height: 300px;
         width: 500px;
-        background-color: rgb(77, 128, 132);
+        background-color: var(--primary-color-1);
         padding: 10px;
         border-style: solid;
         border-width: 2px;
-        border-image: linear-gradient(45deg, rgb(77, 128, 132), rgb(20, 81, 85)) 1;
+        border-image: linear-gradient(45deg, var(--primary-color-1), var(--primary-color-2)) 1;
         margin: 25px;
     }
 
-}
-
-@media screen and (min-width: 500px){
     .img-home-p-1{
         grid-column-start: 3;
         grid-row-start: 2;
-        color: white;
+        color: var(--text-color-1);
         width: 100%;
     }
-}
 
-@media screen and (min-width: 500px){
     .img-home-p-2{
         grid-column-start: 3;
         grid-row-start: 2;
-        color: white;
+        color: var(--text-color-1);
         width: 100%;
     }
-}
 
-@media screen and (min-width: 500px){
     .img-home-p-3{
         grid-column-start: 3;
         grid-row-start: 2;
-        color: white;
+        color: var(--text-color-1);
         width: 100%;
     }
 }
@@ -378,13 +360,7 @@ body{
     height: 600px;
     width: 100%;
     display: grid;
-    border-top: 2px solid white;
-}
-
-@media screen and (min-width: 500px){
-    .footer{
-        height: 300px;
-    }
+    border-top: 2px solid var(--text-color-1);
 }
 
 .h2-3{
@@ -392,12 +368,16 @@ body{
     align-items:flex-start;
     height: 25px;
     width: 100%;
-    color: white;
+    color: var(--text-color-1);
     padding: 5px;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--text-color-1);
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
+    .footer{
+        height: 300px;
+    }
+
     .h2-3{
         width: 6%;
     }
