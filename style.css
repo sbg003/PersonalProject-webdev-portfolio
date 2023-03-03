@@ -109,6 +109,10 @@ body{
     border-bottom-color:var(--text-color-2);
 }
 
+.home-container {
+    border-bottom: 2px solid var(--text-color-1);
+}
+
 .h2-1{
     display: flex;
     align-items:flex-start;
@@ -196,20 +200,56 @@ body{
 }
 
 .footer{
-    height: 600px;
     width: 100%;
-    display: grid;
-    border-top: 2px solid var(--text-color-1);
+    background-image: linear-gradient(to right, var(--accent-color-1), var(--accent-color-2), var(--accent-color-3));
 }
 
 .h2-3{
     display: flex;
     align-items:flex-start;
     height: 25px;
-    width: 100%;
-    color: var(--text-color-1);
+    width: 80%;
+    color: var(--text-color-2);
     padding: 5px;
+    border-bottom: 2px solid var(--text-color-2);
+    margin-left: 5px;
+}
+
+.skills {
+    height:250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-around;
+    color: var(--text-color-2);
+}
+
+li {
+    padding: 5px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+.footer-link {
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-1);
+    text-decoration: none;
+    padding: 5px;
+    border-right: 2px solid var(--text-color-1);
+    margin: 5px;
+    transition: border-bottom 0.1s, font-weight 0.1s;
+}
+
+.footer-link:hover {
     border-bottom: 2px solid var(--text-color-1);
+    font-weight: bold;
 }
 
 @media screen and (min-width: 490px) {
@@ -365,10 +405,17 @@ body{
     }
 
     .footer{
-        height: 300px;
+        margin-top: 20px;
+        padding: 2px;
     }
 
     .h2-3{
-        width: 6%;
+
+    }
+
+    .skills {
+        height: 175px;
+        width: 100%
+        padding: 10px;
     }
 }
