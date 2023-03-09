@@ -45,7 +45,7 @@ body{
     }
 }
 
-.h1{
+h1{
     height: 100px;
     width: 100%;
     display: flex;
@@ -455,3 +455,5 @@ li {
 @media screen and (min-width: 990px) {
 
 }
+
+/* ABOUT.HTML */
