@@ -478,13 +478,14 @@ body {
     height: 100%;
     opacity: 0.4;
     background-image: url("background.jpg");
-    background-repeat: round;
+    background-repeat: repeat-y;
 
     animation: background 8s infinite;
+    animation-direction: alternate;
 }
 
 @keyframes background {
-    0% {opacity: 0.2; width: 95%; height: 95%;}
+    0% {opacity: 0.3; width: 90%; height: 90%;}
     100% {opacity: 0.1; width: 100%; height: 100%;}
 }
 
